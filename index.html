@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>GitHub Pages Test</title>
-    <style>
-      body {
-        background: linear-gradient(to right, #00c6ff, #0072ff);
-        color: white;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 20%;
-      }
-      h1 {
-        font-size: 3em;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>🚀 It works!</h1>
-    <p>If you see this page, GitHub Pages is running.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fortnite Clone</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #000; }
+    canvas { display: block; }
+    #hud {
+      position: absolute; top: 10px; left: 10px;
+      color: white; font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="hud">
+    <div id="health">Health: 100</div>
+    <div id="ammo">Ammo: 30/30</div>
+    <div id="weapon">Weapon: Rifle</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/controls/PointerLockControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="game.js"></script>
+</body>
 </html>
